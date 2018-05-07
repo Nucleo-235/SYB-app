@@ -47,9 +47,10 @@ $colors: (
 	dark:				#222222,
 
 	white:				#ffffff,
+	black:				#000000,
 
-	like:				#22e4a8,
-	dislike:			#f95266,
+	like:				#f2e502,
+	dislike:			#f00000,
 	star:				#ffc30a,
 
 	border:				#edf1f2,
@@ -103,21 +104,21 @@ $colors: (
 @import "noto-sans";
 
 @font-face {
-	font-family: 'Nunito';
+	font-family: 'BebasNeue';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../assets/fonts/nunito.woff2');
+	src: url('../assets/fonts/BebasNeue-Regular.otf');
 }
 
 @font-face {
-	font-family: 'Kaushan Script';
+	font-family: 'SignPainter HouseScript';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../assets/fonts/kaushanscript.woff2');
+	src: url('../assets/fonts/signpainter-housescript.ttf');
 }
 
 body, div, p, span, button, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Nunito', sans-serif !important;
+	font-family: 'BebasNeue', sans-serif !important;
 }
 
 // Lighter border color

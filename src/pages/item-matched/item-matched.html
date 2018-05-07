@@ -1,13 +1,5 @@
 <ion-content padding no-bounce class="bg-blur">
 	<div class="h-full" layout vertical center center-center>
-		<div>
-			<div class="title text-4x">Combinou!</div>
-
-			<p class="text-lg">
-				Você curtiu uma peça da Amanda<br>
-				que curtiu uma peça sua.
-			</p>
-		</div>
 
 		<div>
 			<div class="thumb-xl match-avatar match-left">
@@ -19,9 +11,20 @@
 			</div>
 		</div>
 
+		<div class="cheers">
+			<div class="title text-7x">Feshow!</div>
+		</div>
+
 		<div>
-			<button ion-button round class="match m-b" (tap)="goToChat()">combinar a troca</button>
-			<button ion-button round outline class="continue" (tap)="close()">continuar trocando</button>
+			<p class="text-lg">
+				Você curtiu uma bebida da Amanda<br>
+				que curtiu uma bebida sua.
+			</p>
+		</div>
+
+		<div>
+			<button ion-button outline class="match m-b" (tap)="goToChat()">combinar a troca</button>
+			<button ion-button outline class="continue" (tap)="close()">continuar trocando</button>
 		</div>
 	</div>
 </ion-content>

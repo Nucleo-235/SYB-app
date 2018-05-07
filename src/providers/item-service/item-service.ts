@@ -17,49 +17,49 @@ export class ItemServiceProvider {
 			let data = [
 				{
 					id: 1,
-					title: 'Vestido',
-					size: 'P',
-					description: 'descriçao detalhada do vestuário',
+					title: 'Stone Cacau IPA',
+					content: '300ml',
+					alcohol: '6,1%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/camisa.jpg'
 				},
 				{
 					id: 2,
-					title: 'Blusa',
-					size: 'XG',
-					description: 'descriçao detalhada do vestuário',
+					title: 'Bodebrown Cacau IPA',
+					content: '300ml',
+					alcohol: '6,2%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/blusa.jpg'
 				},
 				{
 					id: 3,
-					title: 'Turbante',
-					size: 'M',
-					description: 'descriçao detalhada do vestuário',
+					title: 'X Cacau IPA',
+					content: '300ml',
+					alcohol: '6,3%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/turbante.jpg'
 				},
 				{
 					id: 4,
-					title: 'Sapatos',
-					size: '38',
-					description: 'descriçao detalhada do vestuário',
+					title: 'Stone No-Cacau IPA',
+					content: '300ml',
+					alcohol: '6,4%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/camisa2.jpg'
 				},
 				{
 					id: 5,
-					title: 'Saia',
-					size: '36',
-					description: 'descriçao detalhada do vestuário',
+					title: 'Bodebrown No-Cacau IPA',
+					content: '300ml',
+					alcohol: '6,5%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/turbante.jpg'
 				},
 				{
 					id: 6,
-					title: 'Camisa Social',
-					size: '4',
-					description: 'descriçao detalhada do vestuário',
+					title: 'X No-Cacau IPA',
+					content: '300ml',
+					alcohol: '6,6%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
 					profile_image_url: 'assets/img/dummy/camisa2.jpg'
 				}

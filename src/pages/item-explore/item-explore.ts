@@ -123,12 +123,12 @@ export class ItemExplorePage {
 
 	checkMatching(card) {
 		// TODO : CHANGE HOW VERIFY IF IS MATCHED
-		if (card.title == 'Sapatos') {
+		if (card.title == 'X Cacau IPA') {
 			let modalMatched = this.modalCtrl.create('ItemMatchedPage');
 			modalMatched.present();
 		}
 
-		if (card.title == 'Vestido') {
+		if (card.title == 'X No-Cacau IPA') {
 			let modalNotFound = this.modalCtrl.create('ItemNotFoundPage');
 			modalNotFound.present();
 		}
@@ -159,10 +159,10 @@ export class ItemExplorePage {
 
 	doComplaint() {
 		let complaintActionSheet = this.actionSheetCtrl.create({
-			title: 'Deseja denunciar esta peça?',
+			title: 'Deseja denunciar esta bebida?',
 			buttons: [
 				{
-					text: 'Não é uma peça',
+					text: 'Não é uma bebida',
 					handler: () => {
 						console.log('Option 1 clicked');
 					}

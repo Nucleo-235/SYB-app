@@ -1,40 +1,44 @@
 page-item-matched {
 	text-align: center;
 
-	.title {
-		font-family: Kaushan Script, cursive !important;
+	.bg-blur {
+		background-color: #191919;
+		color: #ffffff;
 	}
 
-	.bg-blur {
-		background: url('../../assets/img/bgBlur.jpg') center center transparent;
-		background-size: cover;
-		color: white;
+	.cheers {
+		background: url('../../assets/img/cheers.png') no-repeat top center transparent;
+
+		width: 90%;
+
+		.title {
+			padding-top: 50px;
+			font-family: "SignPainter HouseScript", cursive !important;
+		}
 	}
 
 	button.match {
-		border: none;
+		background-color: #191919;
+		border: 1px solid #fff200;
+		color: #ffffff;
 
-		background-color: #0062f2;
-		box-shadow: 0px 5px #004AB5;
-		color: #fff;
+		width: 80%;
 
-		font-size: 1.2em;
-		font-weight: 700;
-
-		padding: 16px 3em;
+		font-size: 1.9rem;
+		text-transform: uppercase;
+		letter-spacing: 0.4rem;
 	}
 
 	button.continue {
-		border: none;
+		background-color: #191919;
+		border: 1px solid #fff200;
+		color: #ffffff;
 
-		background-color:#f46554;
-		box-shadow:0px 5px #b74c3f;
-		color:#fff;
+		width: 80%;
 
-		font-size: 1.2em;
-        font-weight: 700;
-
-		padding: 16px 3em;
+		font-size: 1.9rem;
+		text-transform: uppercase;
+		letter-spacing: 0.4rem;
 	}
 
 	.match-avatar {

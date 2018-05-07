@@ -1,12 +1,34 @@
 @import "../../app/helper.scss";
 
 page-item-explore {
+	ion-header,
+	ion-navbar {
+		background-color: #191919;
+		color: #ffffff;
+
+		.toolbar-background {
+			background-color: #191919;
+			color: #ffffff;
+		}
+
+		.toolbar-title {
+			background-color: #191919;
+			color: #ffffff;
+
+			font-size: 1.9rem;
+			text-transform: uppercase;
+			letter-spacing: 0.2rem;
+		}
+
+	}
+
 	.swipe-bg {
-		background: #fff;
-		background-image: linear-gradient(#fff, #f6f7fb);
+		background: #ffffff;
 	}
 
 	.swipe-container {
+
+
 		height: 100%;
 		padding-bottom: 84px;
 	}
@@ -15,24 +37,25 @@ page-item-explore {
 .card-stack {
 	height: 100%;
 	position: relative;
+
 	.card-item {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		border-radius: 6px;
-		box-shadow: 0 2px 10px 0 hsla(206,7%,60%,.77);
+		// box-shadow: 0 2px 10px 0 hsla(206,7%,60%,.77);
 
 		.card-caption {
+			background: #ffffff;
+
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
 			padding: 12px;
 			@extend .bg-gd-dk;
-			color: white;
-			border-radius: 0 0 6px 6px;
+			color: #191919;
 		}
 	}
 
@@ -50,6 +73,7 @@ page-item-explore {
 		text-transform: uppercase;
 		transform: rotate(15deg);
 		opacity: 0;
+
 		&.stamp-like {
 			right: initial;
 			left: 10px;
@@ -71,9 +95,8 @@ page-item-explore {
 	justify-content: center;
 
 	button {
-		border-radius: 999em;
-		box-shadow: 0 4px 9px 0 rgba(213,218,224,.3);
 		font-size: 24px;
+
 		ion-icon {
 			font-weight: 700;
 		}
@@ -81,23 +104,16 @@ page-item-explore {
 		width: 60px;
 		height: 60px;
 
-		&:nth-child(2n) {
-			width: 40px !important;
-			height: 40px !important;
-			padding: 0 !important;
-
-			ion-icon {
-				font-size: 0.8em !important;
-			}
-		}
-
 		&.button-dislike {
+			background: url('../../assets/img/beer-dislike.png') top left transparent;
 			color: color($colors, dislike);
 		}
 		&.button-warning {
-			color: color($colors, warning);
+			background: transparent;
+			color: color($colors, black);
 		}
 		&.button-like {
+			background: url('../../assets/img/beer-like.png') top right transparent;
 			color: color($colors, like);
 		}
 	}
@@ -108,6 +124,7 @@ page-item-explore {
 	width: 96px;
 	height: 96px;
 }
+
 .ripple-trigger {
 	position: absolute;
 	z-index: 9;
@@ -117,7 +134,9 @@ page-item-explore {
 		transform: scale3d(1.2, 1.2, 1);
 	}
 }
-.ripple-1, .ripple-2 {
+
+.ripple-1,
+.ripple-2 {
 	position: absolute;
 	z-index: 1;
 	top: 2px;
@@ -125,8 +144,8 @@ page-item-explore {
 	width: 92px;
 	height: 92px;
 	border-radius: 999em;
-	background-color: rgba(color($colors, primary), .2);
-	border: solid 1px rgba(color($colors, primary), .4);
+	background-color: rgba(color($colors, dark), .2);
+	border: solid 1px rgba(color($colors, dark), .4);
 	animation: rippling 2s infinite ease-out;
 }
 

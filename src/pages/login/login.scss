@@ -1,45 +1,33 @@
 page-login {
 
 	.login {
-		background: url('../../assets/img/bgFocus.jpg') center center transparent;
-		background-size: cover;
+		background-color: #191919;
 
 		.box {
-			justify-content: space-around;
 			height: 100%;
 
 			.logo {
+				width: 100%;
+
 				img {
+					display: block;
 					margin: 0 auto;
 
-					width: 118px;
+					width: 95%;
 					height: auto;
 				}
 			}
 
-			.slogan {
-				color: #fff;
+			button.enter {
+				background-color: #191919;
+				border: 1px solid #fff200;
+				color: #ffffff;
 
-				padding: 0 3em;
+				width: 80%;
 
-				font-size: 1.2em;
-				font-weight: 700;
-
-				margin: 0 auto;
-
-				text-align: center;
-			}
-
-			button.facebookLogin {
-				background-color: #0062f2;
-				box-shadow: 0px 5px #004AB5;
-				color: #fff;
-
-				font-size: 1.2em;
-				font-weight: 700;
-
-				margin: 0 auto;
-				padding: 25px 3em;
+				font-size: 1.9rem;
+				text-transform: uppercase;
+				letter-spacing: 0.8rem;
 			}
 		}
 	}

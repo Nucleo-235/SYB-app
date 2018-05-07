@@ -1,20 +1,18 @@
 <ion-header no-border>
-	<ion-navbar color="white" hideBackButton>
+	<ion-navbar hideBackButton>
 		<ion-buttons start>
-			<button ion-button icon-only clear (tap)="goToMenu()">
-				<img src="assets/img/headerMenu.png" width="24" alt="">
+			<button ion-button icon-only clear color="white" (tap)="goToMenu()">
+				<ion-icon name="ios-menu-outline"></ion-icon>
 			</button>
 		</ion-buttons>
 
 		<ion-title>
-			<button ion-button icon-only clear>
-				<img src="assets/img/headerLogoActive.png" width="24" alt="">
-			</button>
+			Share Your Beer
 		</ion-title>
 
 		<ion-buttons end>
-			<button ion-button icon-only clear (tap)="goToMessaging()">
-				<img src="assets/img/headerChat.png" width="24" alt="">
+			<button ion-button icon-only clear color="white" (tap)="goToMessaging()">
+				<ion-icon name="ios-chatbubbles-outline"></ion-icon>
 			</button>
 		</ion-buttons>
 	</ion-navbar>
@@ -26,7 +24,7 @@
 	<div class="h-full no-cards" [hidden]="!isLoading" horizontal layout center center-center>
 		<div class="ripple-container">
 			<div class="thumb-lg ripple-trigger">
-				<img src="assets/img/logo.png" class="rounded b b-2x box-shadow thumb-lg">
+				<img src="assets/img/logoMainSYB.png" alt="share your beer" class="rounded b b-2x box-shadow thumb-lg">
 			</div>
 			<div class="ripple-1"></div>
 			<div class="ripple-2"></div>
@@ -34,20 +32,19 @@
 	</div>
 
 	<div class="swipe-container" [hidden]="isLoading">
-		<div class="h-full wrapper-sm">
+		<div class="h-full">
 			<div class="card-stack" swing-stack #cardStack [stackConfig]="stackConfig" (throwoutleft)="disliked(c)" (throwoutright)="liked(c)">
 				<div class="card-item" #card [style.zIndex]="-1 * i" swing-card *ngFor="let c of cards; trackBy: trackByFn; let i = index">
-					<div [style.backgroundImage]="'url(' + c.profile_image_url + ')'" class="div-img h-full r-3x"></div>
+					<div [style.backgroundImage]="'url(' + c.profile_image_url + ')'" class="div-img h-full"></div>
 
 					<div class="card-caption" (tap)="openItemDetails()">
 						<div class="card-text pull-left">
-							<div class="font-bold text-xl">{{c.title}}, {{c.size}}</div>
-							<div>{{c.description}}</div>
-							<div>{{c.tags}}</div>
+							<div class="font-bold text-xl">{{c.title}}</div>
+							<div>{{c.content}} - {{c.alcohol}}</div>
 						</div>
 
 						<div class="pull-right">
-							<ion-icon class="text-2x" name="md-information-circle" color="white"></ion-icon>
+							<ion-icon class="text-2x" name="md-information-circle"></ion-icon>
 						</div>
 					</div>
 
@@ -63,7 +60,7 @@
 			</button>
 
 			<button ion-button color="white" class="button-warning" (tap)="doComplaint()">
-				<ion-icon name="ios-warning-outline"></ion-icon>
+				<ion-icon name="md-warning"></ion-icon>
 			</button>
 
 			<button ion-button color="white" class="button-like" (tap)="liked()">
