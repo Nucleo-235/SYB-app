@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.nucleo235.roupalivre" version="1.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>RoupaLivre</name>
-    <description>Roupa Livre</description>
+<widget id="com.nucleo235.syb" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Share Your Beer</name>
+    <description>Share Your Beer</description>
     <author email="mobileapps@nucleo235.com.br" href="http://nucleo235.com.br/">
         Núcleo 235
     </author>

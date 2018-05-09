@@ -1,5 +1,5 @@
-<ion-header no-border class="header-shadow">
-	<ion-navbar color="white">
+<ion-header no-border class="about header-shadow">
+	<ion-navbar>
 		<ion-title>
 			Sobre o App
 		</ion-title>
@@ -8,19 +8,11 @@
 
 
 
-<ion-content padding>
+<ion-content padding class="about">
 	<div class="logo">
-		<img src="assets/img/logo.png" alt="" />
+		<img src="assets/img/logoMainSYB.png" alt="" />
 		<span class="version">Versão {{ versionNumber }}</span>
 	</div>
-
-	<button class="extLink" ion-button clear (tap)="navigate('http://roupalivre.com.br/app')">
-		Financiado coletivamente por 315 lindos apoiadores
-	</button>
-
-	<button class="extLink" ion-button clear (tap)="navigate('https://github.com/Nucleo-235/roupa-livre-ionic3')">
-		Open Source sob a licença GPL-3.0
-	</button>
 
 	<button class="extLink" ion-button clear (tap)="navigate('https://docs.google.com/document/d/11JL3w2G0NUf8K2nPC477UA-WKFQyHeDSk3q_IfLFTkw/edit?usp=sharing')">
 		Termos de Uso e Política de Privacidade

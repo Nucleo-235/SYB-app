@@ -1,4 +1,4 @@
-# App Roupa Livre IONIC #
+# App Share Your Beer Livre - IONIC #
 
 ## Como Rodar ##
 
@@ -12,8 +12,8 @@ npm install -g ionic
 After cloning the project, to setup project
 
 ```bash
-git clone https://github.com/roupa-livre/roupa-livre-ionic3
-cd roupa-livre-ionic3
+git clone https://github.com/Nucleo-235/SYB-app
+cd SYB-app
 npm install
 ```
 

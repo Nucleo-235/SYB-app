@@ -95,17 +95,19 @@ page-item-explore {
 	justify-content: center;
 
 	button {
-		font-size: 24px;
+		font-size: 20px;
+
+		width: 60px;
+		height: 60px;
 
 		ion-icon {
 			font-weight: 700;
 		}
 
-		width: 60px;
-		height: 60px;
-
 		&.button-dislike {
-			background: url('../../assets/img/beer-dislike.png') top left transparent;
+			padding-top: 8px;
+			padding-left: 24px;
+			background: url('../../assets/img/beer-dislike.png') no-repeat center center transparent;
 			color: color($colors, dislike);
 		}
 		&.button-warning {
@@ -113,7 +115,9 @@ page-item-explore {
 			color: color($colors, black);
 		}
 		&.button-like {
-			background: url('../../assets/img/beer-like.png') top right transparent;
+			padding-top: 8px;
+			padding-right: 26px;
+			background: url('../../assets/img/beer-like.png') no-repeat center center transparent;
 			color: color($colors, like);
 		}
 	}
