@@ -1,6 +1,8 @@
 page-profile-edit {
+
 	.profile-images-edit {
 		padding: 5px;
+
 		.div-img {
 			padding-bottom: 99%;
 			background-color: #e0dfe5;
@@ -12,9 +14,11 @@ page-profile-edit {
 		width: calc(100% / 3 - 10px);
 		margin: 5px;
 		float: left;
+
 		&:first-child {
 			width: calc(2 * 100% / 3 - 10px);
 		}
+
 		.btn-edit {
 			position: absolute;
 			right: -8px;
@@ -37,4 +41,5 @@ page-profile-edit {
 		font-size: 9px;
 		color: #fff;
 	}
+
 }

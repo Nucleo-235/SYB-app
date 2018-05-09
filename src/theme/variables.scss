@@ -106,8 +106,36 @@ $colors: (
 @font-face {
 	font-family: 'BebasNeue';
 	font-style: normal;
+	font-weight: 100;
+	src: url('../assets/fonts/BebasNeue Thin.otf');
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../assets/fonts/BebasNeue Light.otf');
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../assets/fonts/BebasNeue Book.otf');
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	font-style: normal;
 	font-weight: 400;
-	src: url('../assets/fonts/BebasNeue-Regular.otf');
+	src: url('../assets/fonts/BebasNeue Regular.otf');
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../assets/fonts/BebasNeue Bold.otf');
 }
 
 @font-face {
