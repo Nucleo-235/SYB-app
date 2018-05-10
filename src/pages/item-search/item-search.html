@@ -1,10 +1,11 @@
 <ion-header no-border class="header-shadow">
 	<ion-navbar>
 		<ion-title>
-			Filtrar
+			Filtrar Busca
 		</ion-title>
 	</ion-navbar>
 </ion-header>
+
 
 
 <ion-content class="bg-custom">
@@ -25,48 +26,50 @@
 		</ion-list-header>
 
 		<ion-item>
-			<ion-label>Categoria</ion-label>
-			<ion-select [(ngModel)]="categoria">
-				<ion-option value="1">Acessórios</ion-option>
-				<ion-option value="2">Roupas</ion-option>
-				<ion-option value="3">Calçados</ion-option>
-				<ion-option value="4">Bolsas</ion-option>
+			<ion-label>Estilo</ion-label>
+			<ion-select [(ngModel)]="estilo">
+				<ion-option value="1">Altbier</ion-option>
+				<ion-option value="2">Amber Ale</ion-option>
+				<ion-option value="3">Barley Wine</ion-option>
+				<ion-option value="4">Berliner Weisse</ion-option>
 			</ion-select>
 		</ion-item>
 
 		<ion-item>
 			<ion-label>Tipo</ion-label>
 			<ion-select [(ngModel)]="tipo">
-				<ion-option value="1">Bota</ion-option>
-				<ion-option value="2">Sandália</ion-option>
-				<ion-option value="3">Rasterinha</ion-option>
-				<ion-option value="4">Sapatilha</ion-option>
-				<ion-option value="5">Sapato</ion-option>
-				<ion-option value="5">Tênis</ion-option>
+				<ion-option value="1">Ale</ion-option>
+				<ion-option value="2">Cask Ale</ion-option>
+				<ion-option value="3">Kellerbier</ion-option>
+				<ion-option value="4">Lager</ion-option>
+				<ion-option value="5">Sour Ale</ion-option>
+				<ion-option value="5">Wheat Beer</ion-option>
 			</ion-select>
 		</ion-item>
 
 		<ion-item>
-			<ion-label>Adulto ou Infantil</ion-label>
-			<ion-select [(ngModel)]="adultoInfantil">
-				<ion-option value="1">Adulto</ion-option>
-				<ion-option value="2">Infantil</ion-option>
+			<ion-label>Origem</ion-label>
+			<ion-select [(ngModel)]="origem">
+				<ion-option value="1">Grã Bretanha</ion-option>
+				<ion-option value="2">Irlanda</ion-option>
+				<ion-option value="3">América do Norte</ion-option>
+				<ion-option value="4">Bélgica</ion-option>
+				<ion-option value="5">Republica Tcheca</ion-option>
+				<ion-option value="6">França</ion-option>
+				<ion-option value="7">Alemanha</ion-option>
+				<ion-option value="8">Europa</ion-option>
+				<ion-option value="9">Outra\os</ion-option>
 			</ion-select>
 		</ion-item>
+	</ion-list>
+
+	<ion-list no-lines>
+		<ion-list-header>
+			Região
+		</ion-list-header>
 
 		<ion-item>
-			<ion-label>Tamanho</ion-label>
-			<ion-select [(ngModel)]="tamanho">
-				<ion-option value="1">Único</ion-option>
-				<ion-option value="2">34</ion-option>
-				<ion-option value="3">60</ion-option>
-				<ion-option value="4">PP</ion-option>
-				<ion-option value="5">P</ion-option>
-				<ion-option value="6">M</ion-option>
-				<ion-option value="7">G</ion-option>
-				<ion-option value="8">GG</ion-option>
-				<ion-option value="9">GGG</ion-option>
-			</ion-select>
+			<ion-input type="text" placeholder="separe com vírgulas"></ion-input>
 		</ion-item>
 	</ion-list>
 
@@ -92,7 +95,7 @@
 <ion-footer>
 	<ion-toolbar>
 		<button ion-button round class="clean" (tap)="clean()">
-			limpar filtros
+			limpar
 		</button>
 
 		<button ion-button round class="search" (tap)="search()">

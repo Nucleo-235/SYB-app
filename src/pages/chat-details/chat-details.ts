@@ -46,6 +46,7 @@ export class ChatDetailsPage {
 		let message = {
 			isMe: true,
 			type: 'text',
+			owner: 'Alexandre Cordeiro',
 			body: this.typingMessage,
 			timestamp: 'Mar 13, 2018 9:55am'
 		};
@@ -71,6 +72,7 @@ export class ChatDetailsPage {
 				isMe: false,
 				avatar: 'assets/img/dummy/hieu.png',
 				type: 'text',
+				owner: 'Henrique Rangel',
 				body: 'Nice. Keep typing dude',
 				timestamp: 'Oct 10, 2017 9:55am'
 			});

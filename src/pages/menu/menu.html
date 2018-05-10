@@ -1,14 +1,12 @@
 <ion-header no-border>
 	<ion-navbar hideBackButton>
 		<ion-title>
-			<button ion-button icon-only clear>
-				<img src="assets/img/headerMenuActive.png" width="24" alt="">
-			</button>
+			Menu
 		</ion-title>
 
 		<ion-buttons end>
-			<button ion-button icon-only clear (tap)="goToExplore()">
-				<img src="assets/img/headerLogo.png" width="24" alt="">
+			<button ion-button icon-only clear color="white" (tap)="goToExplore()">
+				<ion-icon name="md-close"></ion-icon>
 			</button>
 		</ion-buttons>
 	</ion-navbar>
@@ -18,85 +16,85 @@
 
 <ion-content no-bounce class="bg-custom">
 	<div layout vertical>
-		<div flex three class="bg-white">
-			<div class="wrapper text-center">
+		<div flex three>
+			<div class="profileArea wrapper text-center">
 				<div class="big-thumb" (tap)="editProfile()">
 					<img src="assets/img/dummy/hieu.png" class="rounded box-shadow" alt="">
 				</div>
-				<div class="text-2x">oiê, Henrique</div>
-				<div class="">liberte suas roupas</div>
+				<div class="text-2x">Henrique Rangel</div>
+				<div class="">compartilhe sua breja</div>
 			</div>
 
-			<div>
+			<div class="menuArea">
 				<ion-grid>
 					<ion-row>
-						<ion-col col-4 class="text-center b-r b-light">
-							<button ion-button icon-only color="primary" class="button-round" (tap)="goToSearch()">
+						<ion-col col-4 class="text-center b-r b-dark">
+							<button ion-button icon-only color="black" class="button-round" (tap)="goToSearch()">
 								<ion-icon name="search"></ion-icon>
 							</button>
-							<div class="text-muted text-xs l-s-1x m-t-xs">filtrar</div>
+							<div class="text-xs l-s-1x m-t-xs">filtrar</div>
 						</ion-col>
-						<ion-col col-4 class="text-center b-r b-light">
-							<button ion-button icon-only color="primary" class="button-round" (tap)="goToMyItems()">
-								<ion-icon name="shirt"></ion-icon>
+						<ion-col col-4 class="text-center b-r b-dark">
+							<button ion-button icon-only color="black" class="button-round" (tap)="goToMyItems()">
+								<ion-icon name="beer"></ion-icon>
 							</button>
-							<div class="text-muted text-xs l-s-1x m-t-xs">minhas peças</div>
+							<div class="text-xs l-s-1x m-t-xs">minhas brejas</div>
 						</ion-col>
 						<ion-col col-4 class="text-center">
-							<button ion-button icon-only color="primary" class="button-round" (tap)="goToAbout()">
+							<button ion-button icon-only color="black" class="button-round" (tap)="goToAbout()">
 								<ion-icon name="md-information-circle"></ion-icon>
 							</button>
-							<div class="text-muted text-xs l-s-1x m-t-xs">sobre</div>
+							<div class="text-xs l-s-1x m-t-xs">sobre</div>
 						</ion-col>
 					</ion-row>
 				</ion-grid>
 			</div>
 		</div>
 
-		<div flex two class="me-bottom-bg">
+		<div flex two class="infoSlider me-bottom-bg">
 			<div class="oval"></div>
 
 			<ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">
 				<ion-slide>
 					<div class="slide-title">
-						<ion-icon name="md-create" color="primary"></ion-icon>
+						<ion-icon name="md-create" color="like"></ion-icon>
 						Cadastre
 					</div>
-					<p>suas peças e comece a trocar.</p>
+					<p>suas bebidas e comece a trocar.</p>
 				</ion-slide>
 				<ion-slide>
 					<div class="slide-title">
-						<ion-icon name="shirt" color="primary"></ion-icon>
+						<ion-icon name="beer" color="like"></ion-icon>
 						Encontre
 					</div>
-					<p>peças que combinam com você.</p>
+					<p>cervejas que combinam com você.</p>
 				</ion-slide>
 				<ion-slide>
 					<div class="slide-title">
-						<ion-icon name="search" color="primary"></ion-icon>
+						<ion-icon name="search" color="like"></ion-icon>
 						Use o Filtro
 					</div>
-					<p>para encontrar aquela peça especial.</p>
+					<p>para encontrar aquela breja especial.</p>
 				</ion-slide>
 				<ion-slide>
 					<div class="slide-title">
-						<ion-icon name="star" color="primary"></ion-icon>
+						<ion-icon name="star" color="like"></ion-icon>
 						Combinou!
 					</div>
-					<p>Você e alguém curtiram a peça um do outro.</p>
+					<p>Você e alguém curtiram a cerva um do outro.</p>
 				</ion-slide>
 				<ion-slide>
 					<div class="slide-title">
-						<ion-icon name="chatbubbles" color="primary"></ion-icon>
+						<ion-icon name="chatbubbles" color="like"></ion-icon>
 						Combine
 					</div>
 					<p>a troca através do nosso chat!</p>
 				</ion-slide>
 			</ion-slides>
 
-			<div class="wrapper text-center">
-				<button ion-button color="light" class="btn-default" (tap)="goToOfferItem()">
-					<span ion-text color="primary">OFERECER PEÇA</span>
+			<div class="offerArea wrapper text-center">
+				<button ion-button color="like" class="offer" (tap)="goToOfferItem()">
+					<span ion-text>OFERECER UMA BREJA</span>
 				</button>
 			</div>
 		</div>

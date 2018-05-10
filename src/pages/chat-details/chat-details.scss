@@ -1,5 +1,44 @@
 page-chat-details {
+
+	ion-header ion-icon.back-button-icon.icon {
+		color: #191919;
+	}
+
+	ion-header,
+	ion-navbar {
+		background-color: #fff200;
+		color: #191919;
+
+		.toolbar-background {
+			background-color: #fff200;
+			color: #191919;
+		}
+
+		.toolbar-title {
+			background-color: #fff200;
+			color: #191919;
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+	}
+
+	ion-footer,
+	ion-toolbar {
+		background-color: #191919;
+		color: #ffffff;
+
+		.toolbar-background {
+			background-color: #191919;
+			color: #ffffff;
+		}
+	}
+
 	.avatar-title {
+
 		.avatar-name {
 			font-size: 9px;
 			font-weight: 400;
@@ -12,12 +51,15 @@ page-chat-details {
 
 /* Chat bubble v1.0.0 */
 
-$myMsgColor: #488aff;
-$otherMsgColor: #e6e6e6;
+$myMsgColor: #fffdeb;
+$myMsgColorTitle: #c9bf05;
+$otherMsgColor: #eafef8;
+$otherMsgColorTitle: #0c7052;
 $tailSize: 10px;
 $greyColor: #8E8E90;
 
 .chat-list {
+
 	.chat-item {
 		margin-bottom: 8px;
 	}
@@ -55,6 +97,7 @@ $greyColor: #8E8E90;
 		position: relative;
 		max-width: 80%;
 		margin-bottom: 4px;
+
 		.icon-tail {
 			position: absolute;
 			top: inherit;
@@ -81,12 +124,17 @@ $greyColor: #8E8E90;
 			&.photo {
 				padding: 0;
 			}
+
+			.chat-title {
+				color: $otherMsgColorTitle;
+			}
 		}
 
 		&.bubble-image {
 			.icon-tail {
 				display: none;
 			}
+
 			img {
 				width: 100%;
 				border-radius: 16px;
@@ -97,6 +145,7 @@ $greyColor: #8E8E90;
 	.chat-item {
 		&.me {
 			text-align: right;
+
 			.icon-tail {
 				left: inherit;
 				top: inherit;
@@ -113,7 +162,11 @@ $greyColor: #8E8E90;
 
 			.chat-body {
 				background: $myMsgColor;
-				color: #fff;
+				color: #1f1f1f;
+
+				.chat-title {
+					color: $myMsgColorTitle;
+				}
 			}
 		}
 	}
@@ -138,12 +191,19 @@ $greyColor: #8E8E90;
 
 ion-textarea[fz-elastic] .text-input {
 	margin: 0 4px!important;
-	padding-top: 12px!important;
+	padding-top: 9px!important;
 	padding-right: 60px;
 	padding-left: 12px;
+
 	&.text-input-md {
-		padding-top: 12px!important;
+		padding-top: 9px !important;
 	}
+
+	border-radius: 3px;
+
+	background: #fff;
+    height: 30px;
+    color: #1f1f1f;
 }
 
 .giphy-input {
@@ -173,5 +233,7 @@ ion-textarea[fz-elastic] .text-input {
 		right: 0px;
 		bottom: 2px;
 		padding-right: 12px;
+
+		padding-top: 5px;
 	}
 }

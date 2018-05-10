@@ -15,9 +15,10 @@ page-item-explore {
 			background-color: #191919;
 			color: #ffffff;
 
-			font-size: 1.9rem;
+			font-size: 2.2rem;
+			font-weight: 300;
 			text-transform: uppercase;
-			letter-spacing: 0.2rem;
+			letter-spacing: 0.1rem;
 		}
 
 	}
@@ -113,6 +114,11 @@ page-item-explore {
 		&.button-warning {
 			background: transparent;
 			color: color($colors, black);
+
+			width: 30px;
+
+			margin: 0px;
+			padding: 0px;
 		}
 		&.button-like {
 			padding-top: 8px;

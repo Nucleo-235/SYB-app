@@ -1,19 +1,11 @@
 <ion-header no-border>
-	<ion-navbar hideBackButton>
-		<ion-buttons start>
-			<button ion-button clear (tap)="goToExplore()">
-				<img src="assets/img/headerLogo.png" width="24" alt="">
-			</button>
-		</ion-buttons>
-
-		<ion-title>
-			<button ion-button icon-only clear>
-				<img src="assets/img/headerChatActive.png" width="24" alt="">
-			</button>
+	<ion-navbar>
+		<ion-title color="like">
+			Meus Chats
 		</ion-title>
 	</ion-navbar>
 
-	<ion-toolbar color="white">
+	<ion-toolbar color="like">
 		<ion-searchbar placeholder="Buscar items combinados"></ion-searchbar>
 	</ion-toolbar>
 </ion-header>
@@ -23,9 +15,9 @@
 <ion-content>
 	<div>
 		<div class="wrapper-xs padder">
-			<div ion-text color="primary" class="font-bold">
+			<div ion-text color="black" class="font-bold">
 				Mensagens
-				<ion-badge color="primary">10</ion-badge>
+				<ion-badge color="black">10</ion-badge>
 			</div>
 		</div>
 

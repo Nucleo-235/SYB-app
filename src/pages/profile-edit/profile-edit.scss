@@ -1,5 +1,31 @@
 page-profile-edit {
 
+	ion-header ion-icon.back-button-icon.icon {
+		color: #191919;
+	}
+
+	ion-header,
+	ion-navbar {
+		background-color: #fff200;
+		color: #191919;
+
+		.toolbar-background {
+			background-color: #fff200;
+			color: #191919;
+		}
+
+		.toolbar-title {
+			background-color: #fff200;
+			color: #191919;
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+	}
+
 	.profile-images-edit {
 		padding: 5px;
 
@@ -33,7 +59,7 @@ page-profile-edit {
 	}
 
 	.label-special {
-		background-color: color($colors, danger);
+		background-color: color($colors, black);
 		border-radius: 999em;
 		text-transform: none;
 		padding: 1px 6px;

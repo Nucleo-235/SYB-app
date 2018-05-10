@@ -1,7 +1,7 @@
 <ion-header no-border class="header-shadow">
 	<ion-navbar>
 		<ion-title>
-			Miguel
+			Henrique Rangel
 		</ion-title>
 	</ion-navbar>
 </ion-header>
@@ -33,10 +33,12 @@
 					<img [src]="item.avatar">
 				</div>
 
-				<div class="chat-item-bubble" [ngClass]="{'bubble-image': item.type == 'image'}">
+				<div class="chat-item-bubble">
 					<i class="icon-tail"></i>
-					<div class="chat-body" *ngIf="item.type !== 'image'" [innerHtml]="item.body | nlbr"></div>
-					<img [src]="item.body" *ngIf="item.type == 'image'">
+					<div class="chat-body">
+						<div class="chat-title" [innerHtml]="item.owner | nlbr"></div>
+						<div class="chat-text" [innerHtml]="item.body | nlbr"></div>
+					</div>
 				</div>
 
 				<div class="chat-item-reaction" *ngIf="!item.isMe && item.type == 'image'">

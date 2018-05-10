@@ -1,12 +1,52 @@
 page-menu {
+
+	ion-header ion-icon.back-button-icon.icon {
+		color: #ffffff;
+	}
+
+	ion-header,
+	ion-navbar {
+		background-color: #191919;
+		color: #ffffff;
+
+		.toolbar-background {
+			background-color: #191919;
+			color: #ffffff;
+		}
+
+		.toolbar-title {
+			background-color: #191919;
+			color: #ffffff;
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+	}
+
+	.bg-custom {
+		background-color: #191919;
+	}
+
+	.profileArea {
+		background-color: #fff200;
+	}
+
+	.menuArea {
+		background-color: #fff200;
+	}
+
 	.button-round {
 		border-radius: 999em;
 		font-size: 14px;
 		font-weight: 700;
 		width: 48px;
 		height: 48px;
-		background-color: color($colors, light);
-		color: color($colors, primary);
+		//background-color: color($colors, black);
+		background-color: transparent;
+		color: color($colors, black);
 	}
 
 	.me-bottom-bg {
@@ -32,10 +72,14 @@ page-menu {
 		}
 	}
 
+	.infoSlider {
+		background-color: #191919;
+	}
+
 	.oval {
 		width: 100%;
 		height: 60px;
-		background-color: #fff;
+		background-color: #fff200;
 		border-radius: 50%;
 		box-shadow: 0 4px 9px 0 rgba(213,218,224,.3);
 		position: relative;
@@ -43,9 +87,15 @@ page-menu {
 	}
 
 	.bottom-slides {
+		background-color: #191919;
+
 		height: 100px;
 		margin-top: -20px;
-		margin-bototm: 8px
+		margin-bottom: 8px;
+
+		p {
+			color: #fff;
+		}
 	}
 
 	.swiper-slide {
@@ -57,10 +107,11 @@ page-menu {
 	}
 
 	.swiper-pagination-bullet-active {
-		background: color($colors, primary);
+		background: color($colors, like);
 	}
 
 	.slide-title {
+		color: #fff;
 		font-size: 20px;
 		font-weight: 500;
 	}
@@ -75,5 +126,23 @@ page-menu {
 		.slide-title {
 			font-size: 28px;
 		}
+	}
+
+	.offerArea {
+		background-color: #191919;
+
+		button.offer {
+				background-color: #191919;
+				border: 1px solid #fff200;
+				color: #ffffff;
+
+				border-radius: 0px;
+
+				width: 90%;
+
+				font-size: 1.9rem;
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+			}
 	}
 }

@@ -3,7 +3,7 @@
 		<ion-title>Perfil</ion-title>
 
 		<ion-buttons end>
-			<button ion-button clear color="primary" (click)="close()">
+			<button ion-button clear color="black" (click)="close()">
 				Salvar
 			</button>
 		</ion-buttons>
@@ -16,10 +16,10 @@
 		<div class="profile-image" *ngFor="let image of profileImages; let i = index" (click)="openPhotoPicker(i)">
 			<div [style.backgroundImage]="'url(' + profileImages[i] + ')'" class="div-img img-square r-3x"></div>
 			<button ion-button icon-only clear class="btn-edit" (click)="removeImage(i)" *ngIf="profileImages[i] != ''">
-				<ion-icon name="md-close" color="danger"></ion-icon>
+				<ion-icon name="md-close" color="black"></ion-icon>
 			</button>
 			<button ion-button icon-only clear class="btn-edit" *ngIf="profileImages[i] == ''">
-				<ion-icon name="md-add-circle" color="danger"></ion-icon>
+				<ion-icon name="md-add-circle" color="black"></ion-icon>
 			</button>
 		</div>
 	</div>
