@@ -21,7 +21,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,1%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/camisa.jpg'
+					profile_image_url: 'assets/img/dummy/cerva01.png'
 				},
 				{
 					id: 2,
@@ -29,7 +29,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,2%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/blusa.jpg'
+					profile_image_url: 'assets/img/dummy/cerva02.png'
 				},
 				{
 					id: 3,
@@ -37,7 +37,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,3%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/turbante.jpg'
+					profile_image_url: 'assets/img/dummy/cerva03.png'
 				},
 				{
 					id: 4,
@@ -45,7 +45,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,4%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/camisa2.jpg'
+					profile_image_url: 'assets/img/dummy/cerva04.png'
 				},
 				{
 					id: 5,
@@ -53,7 +53,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,5%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/turbante.jpg'
+					profile_image_url: 'assets/img/dummy/cerva05.png'
 				},
 				{
 					id: 6,
@@ -61,7 +61,7 @@ export class ItemServiceProvider {
 					content: '300ml',
 					alcohol: '6,6%',
 					tags: '#tag1 #tag2 #tag3 #tag4',
-					profile_image_url: 'assets/img/dummy/camisa2.jpg'
+					profile_image_url: 'assets/img/dummy/cerva06.png'
 				}
 			];
 

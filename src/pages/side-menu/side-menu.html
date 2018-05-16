@@ -1,0 +1,45 @@
+<ion-header no-border class="side-menu">
+	<ion-navbar hideBackButton>
+		<ion-buttons start>
+			<button ion-button icon-only clear color="white" (tap)="goToExplore()">
+				<ion-icon name="md-close"></ion-icon>
+			</button>
+		</ion-buttons>
+
+		<ion-title>
+			Menu
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content class="side-menu">
+
+	<ion-list no-lines>
+		<ion-item padding-vertical (tap)="editProfile()">
+			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+			<div class=userProfile>Lucas Cordeiro</div>
+		</ion-item>
+		<ion-item padding-vertical (tap)="goToMyItems()">
+			<ion-icon name="beer" item-start></ion-icon>
+			Suas Brejas
+		</ion-item>
+		<ion-item padding-vertical (tap)="goToSearch()">
+			<ion-icon name="pin" item-start></ion-icon>
+			Procurar por Área
+		</ion-item>
+		<ion-item padding-vertical>
+			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+			Melhores da Semana
+		</ion-item>
+		<ion-item padding-vertical>
+			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+			Trocar Agora
+		</ion-item>
+		<ion-item padding-vertical (tap)="goChatMain()">
+			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+			Chat
+		</ion-item>
+	</ion-list>
+
+</ion-content>

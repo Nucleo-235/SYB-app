@@ -2,8 +2,8 @@ page-item-matched {
 	text-align: center;
 
 	.bg-blur {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 	}
 
 	.cheers {
@@ -12,19 +12,23 @@ page-item-matched {
 		width: 90%;
 
 		.title {
-			padding-top: 50px;
+			padding-top: 40px;
 			font-family: "SignPainter HouseScript", cursive !important;
 		}
 	}
 
 	button.match {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -32,13 +36,17 @@ page-item-matched {
 	}
 
 	button.continue {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -46,9 +54,10 @@ page-item-matched {
 	}
 
 	.match-avatar {
-		margin: 16px 4px;
+		margin: 0 12px 0 0;
 		animation: fromLeft 1s ease-in;
 		&.match-right {
+			margin: 0 0 0 12px;
 			animation-name: fromRight;
 		}
 	}

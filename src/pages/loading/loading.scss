@@ -1,7 +1,7 @@
 page-loading {
 
     .loading {
-        background-color: #191919;
+        background-color: color($colors, dark);
 
         .box {
             justify-content: space-around;
@@ -17,7 +17,7 @@ page-loading {
             }
 
             .info {
-                color: #fff;
+                color: color($colors, white);
 
                 padding: 0 3em;
 

@@ -7,18 +7,22 @@ page-item-not-found {
 	}
 
 	.bg-blur {
-		background-color: #191919;
-		color: white;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 	}
 
 	button.match {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -26,13 +30,17 @@ page-item-not-found {
 	}
 
 	button.continue {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;

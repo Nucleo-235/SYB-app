@@ -25,7 +25,7 @@ export class ChatServiceProvider {
 				{
 					isMe: true,
 					type: 'text',
-					owner: 'Alexandre Cordeiro',
+					owner: 'Lucas Cordeiro',
 					body: 'Olá',
 					timestamp: 'Mar 10, 2018 9:47am'
 				},
@@ -40,7 +40,7 @@ export class ChatServiceProvider {
 				{
 					isMe: true,
 					type: 'text',
-					owner: 'Alexandre Cordeiro',
+					owner: 'Lucas Cordeiro',
 					body: 'Gostei da sua breja',
 					timestamp: 'Mar 10, 2018 9:50am'
 				},
@@ -55,7 +55,7 @@ export class ChatServiceProvider {
 				{
 					isMe: true,
 					type: 'text',
-					owner: 'Alexandre Cordeiro',
+					owner: 'Lucas Cordeiro',
 					body: 'Vamos trocar?',
 					timestamp: 'Mar 10, 2018 9:53am'
 				},

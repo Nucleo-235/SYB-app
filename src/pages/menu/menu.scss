@@ -1,22 +1,22 @@
 page-menu {
 
 	ion-header ion-icon.back-button-icon.icon {
-		color: #ffffff;
+		color: color($colors, white);
 	}
 
 	ion-header,
 	ion-navbar {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 
 		.toolbar-background {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 		}
 
 		.toolbar-title {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 
 			font-size: 2.2rem;
 			font-weight: 300;
@@ -24,18 +24,23 @@ page-menu {
 			letter-spacing: 0.1rem;
 		}
 
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
 	}
 
 	.bg-custom {
-		background-color: #191919;
+		background-color: color($colors, dark);
 	}
 
 	.profileArea {
-		background-color: #fff200;
+		background-color: color($colors, like);
 	}
 
 	.menuArea {
-		background-color: #fff200;
+		background-color: color($colors, like);
 	}
 
 	.button-round {
@@ -73,13 +78,13 @@ page-menu {
 	}
 
 	.infoSlider {
-		background-color: #191919;
+		background-color: color($colors, dark);
 	}
 
 	.oval {
 		width: 100%;
 		height: 60px;
-		background-color: #fff200;
+		background-color: color($colors, like);
 		border-radius: 50%;
 		box-shadow: 0 4px 9px 0 rgba(213,218,224,.3);
 		position: relative;
@@ -87,14 +92,14 @@ page-menu {
 	}
 
 	.bottom-slides {
-		background-color: #191919;
+		background-color: color($colors, dark);
 
 		height: 100px;
 		margin-top: -20px;
 		margin-bottom: 8px;
 
 		p {
-			color: #fff;
+			color: color($colors, white);
 		}
 	}
 
@@ -111,7 +116,7 @@ page-menu {
 	}
 
 	.slide-title {
-		color: #fff;
+		color: color($colors, white);
 		font-size: 20px;
 		font-weight: 500;
 	}
@@ -129,12 +134,12 @@ page-menu {
 	}
 
 	.offerArea {
-		background-color: #191919;
+		background-color: color($colors, dark);
 
 		button.offer {
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 

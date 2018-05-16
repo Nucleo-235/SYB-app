@@ -2,17 +2,17 @@ page-terms {
 
 	ion-header,
 	ion-navbar {
-		background-color: #fff200;
-		color: #191919;
+		background-color: color($colors, like);
+		color: color($colors, dark);
 
 		.toolbar-background {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 		}
 
 		.toolbar-title {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 
 			font-size: 2.2rem;
 			font-weight: 300;
@@ -20,22 +20,34 @@ page-terms {
 			letter-spacing: 0.1rem;
 		}
 
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
+
 	}
 
 	ion-footer,
 	ion-toolbar {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 
 		.toolbar-background {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 		}
 	}
 
 	.terms {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
+
+		p {
+			font-family: 'Helvetica Neue', sans-serif !important;
+			text-align: justify;
+			line-height: 1.5;
+		}
 
 		.toolbar-content {
 			display: flex;
@@ -44,33 +56,33 @@ page-terms {
 			button.cancel {
 				flex-direction: row;
 
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 
 				width: 80%;
 
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 				text-transform: uppercase;
-				letter-spacing: 0.4rem;
+				letter-spacing: 0.5rem;
 			}
 
 			button.agree {
 				flex-direction: row;
 
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 
 				width: 80%;
 
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 				text-transform: uppercase;
-				letter-spacing: 0.4rem;
+				letter-spacing: 0.5rem;
 			}
 		}
 

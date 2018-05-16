@@ -10,17 +10,17 @@
 
 <ion-content class="bg-custom">
 
-	<ion-list no-lines>
+	<ion-list>
 		<ion-list-header>
-			Palavras chave e/ou hashtags
+			Hashtags
 		</ion-list-header>
 
 		<ion-item>
-			<ion-input type="text" placeholder="separe com vírgulas"></ion-input>
+			<ion-input type="text" placeholder="Palavras chave e hashtags"></ion-input>
 		</ion-item>
 	</ion-list>
 
-	<ion-list no-lines>
+	<ion-list>
 		<ion-list-header>
 			Caracteristicas
 		</ion-list-header>
@@ -63,7 +63,7 @@
 		</ion-item>
 	</ion-list>
 
-	<ion-list no-lines>
+	<ion-list>
 		<ion-list-header>
 			Região
 		</ion-list-header>
@@ -73,26 +73,14 @@
 		</ion-item>
 	</ion-list>
 
-	<ion-list no-lines>
-		<ion-list-header>
-			Distância
-		</ion-list-header>
-
-		<ion-item class="line-merge-down">
-			<ion-label stacked>
-				<span [hidden]="distance > 99">Até {{ distance || 1 }}km de distância</span>
-				<span [hidden]="distance <= 99 || distance == null">Sem filtro de distância</span>
-			</ion-label>
-			<ion-range no-padding min="1" max="100" [(ngModel)]="distance" color="primary">
-				<ion-label range-left>1km</ion-label>
-				<ion-label range-right>não filtrar</ion-label>
-			</ion-range>
-		</ion-item>
-	</ion-list>
+	<div>
+		<button ion-button outline class="search" (tap)="search()">filtrar</button>
+		<button ion-button outline class="clean" (tap)="clean()">limpar filtros</button>
+	</div>
 
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
 	<ion-toolbar>
 		<button ion-button round class="clean" (tap)="clean()">
 			limpar
@@ -102,4 +90,4 @@
 			filtrar
 		</button>
 	</ion-toolbar>
-</ion-footer>
+</ion-footer> -->

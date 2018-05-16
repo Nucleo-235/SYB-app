@@ -26,12 +26,11 @@ export class ItemFormPage {
 
 	init() {
 		this.profileImages = [
-			'assets/img/dummy/camisa.jpg',
-			'assets/img/dummy/camisa.jpg',
-			'assets/img/dummy/camisa.jpg',
-			'assets/img/dummy/camisa.jpg',
-			'assets/img/dummy/camisa.jpg',
-			''
+			'assets/img/dummy/cerva01.png',
+			'assets/img/dummy/cerva02.png',
+			'assets/img/dummy/cerva03.png',
+			'assets/img/dummy/cerva04.png',
+			'assets/img/dummy/cerva05.png'
 		];
 	}
 

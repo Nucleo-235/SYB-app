@@ -1,22 +1,26 @@
 page-chat-details {
 
+	.scroll-content {
+		background: url('../../assets/img/bgWaterMark20Logo.png') no-repeat bottom center transparent;
+	}
+
 	ion-header ion-icon.back-button-icon.icon {
-		color: #191919;
+		color: color($colors, dark);
 	}
 
 	ion-header,
 	ion-navbar {
-		background-color: #fff200;
-		color: #191919;
+		background-color: color($colors, like);
+		color: color($colors, dark);
 
 		.toolbar-background {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 		}
 
 		.toolbar-title {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 
 			font-size: 2.2rem;
 			font-weight: 300;
@@ -24,16 +28,22 @@ page-chat-details {
 			letter-spacing: 0.1rem;
 		}
 
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
+
 	}
 
 	ion-footer,
 	ion-toolbar {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 
 		.toolbar-background {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 		}
 	}
 
@@ -51,12 +61,12 @@ page-chat-details {
 
 /* Chat bubble v1.0.0 */
 
-$myMsgColor: #fffdeb;
-$myMsgColorTitle: #c9bf05;
-$otherMsgColor: #eafef8;
-$otherMsgColorTitle: #0c7052;
+$myMsgColor: color($colors, myChatColor);
+$myMsgColorTitle: color($colors, myChatColorTitle);
+$otherMsgColor: color($colors, otherChatColor);
+$otherMsgColorTitle: color($colors, otherChatColorTitle);
 $tailSize: 10px;
-$greyColor: #8E8E90;
+$greyColor: color($colors, grey);
 
 .chat-list {
 
@@ -114,7 +124,7 @@ $greyColor: #8E8E90;
 		.chat-body {
 			display: inline-block;
 			background: $otherMsgColor;
-			border-radius: 20px;
+			border-radius: 6px;
 			padding: 10px;
 			white-space: normal;
 			max-width: 100%;
@@ -127,6 +137,14 @@ $greyColor: #8E8E90;
 
 			.chat-title {
 				color: $otherMsgColorTitle;
+
+				font-family: 'Helvetica Neue', sans-serif !important;
+				text-transform: uppercase;
+			}
+
+			.chat-text {
+				font-family: 'Helvetica Neue', sans-serif !important;
+				font-size: 1.4rem;
 			}
 		}
 
@@ -162,10 +180,18 @@ $greyColor: #8E8E90;
 
 			.chat-body {
 				background: $myMsgColor;
-				color: #1f1f1f;
+				color: color($colors, dark);
 
 				.chat-title {
 					color: $myMsgColorTitle;
+
+					font-family: 'Helvetica Neue', sans-serif !important;
+					text-transform: uppercase;
+				}
+
+				.chat-text {
+					font-family: 'Helvetica Neue', sans-serif !important;
+					font-size: 1.4rem;
 				}
 			}
 		}
@@ -190,8 +216,10 @@ $greyColor: #8E8E90;
 }
 
 ion-textarea[fz-elastic] .text-input {
-	margin: 0 4px!important;
-	padding-top: 9px!important;
+	font-family: 'Helvetica Neue', sans-serif !important;
+
+	margin: 8px !important;
+	padding-top: 6px !important;
 	padding-right: 60px;
 	padding-left: 12px;
 
@@ -201,9 +229,9 @@ ion-textarea[fz-elastic] .text-input {
 
 	border-radius: 3px;
 
-	background: #fff;
+	background: color($colors, white);
     height: 30px;
-    color: #1f1f1f;
+    color: color($colors, dark);
 }
 
 .giphy-input {
@@ -215,12 +243,12 @@ ion-textarea[fz-elastic] .text-input {
 	}
 
 	.toolbar-background {
-		background-color: white;
+		background-color: color($colors, white);
 	}
 
 	.button-gif {
-		background-color: #488aff;
-		color: white;
+		background-color: color($colors, primary);
+		color: color($colors, white);
 		font-weight: 700;
 		font-size: 12px;
 		border-radius: 999em;
