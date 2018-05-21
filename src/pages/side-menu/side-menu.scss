@@ -32,7 +32,11 @@ page-side-menu {
         background-color: color($colors, dark);
 
         ion-list {
-            background-color: transparent;
+			background-color: transparent;
+
+			img.icon {
+				vertical-align: middle;
+			}
 
             ion-item {
                 color: color($colors, white);
@@ -40,9 +44,9 @@ page-side-menu {
                 border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2) !important;
 
                 .userProfile {
-                    font-size: 1.8rem;
+                    font-size: 2.2rem;
                     font-weight: 800;
-                    letter-spacing: 0.4rem;
+                    letter-spacing: 0.5rem;
                 }
             }
         }

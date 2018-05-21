@@ -1,3 +1,75 @@
 page-my-group-items {
 
+    ion-header,
+	ion-navbar {
+		background-color: color($colors, like);
+		color: color($colors, dark);
+
+		.toolbar-background {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+		}
+
+		.toolbar-title {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
+
+	}
+
+	ion-content {
+
+		ion-list {
+
+
+			ion-item {
+				font-family: 'Helvetica Neue', sans-serif !important;
+
+				img {
+					vertical-align: middle;
+				}
+
+				&.evilBlond {
+					background-color: #efe37f;
+					color: #d4a85f;
+					box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+				}
+
+				&.king {
+					background-color: #ca9f5d;
+					color: #8d5e2d;
+					box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+				}
+
+				&.mamba {
+					background-color: #c06a5b;
+					color: #87423c;
+					box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+				}
+
+				&.tuborg {
+					background-color: #a35275;
+					color: #732249;
+					box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.25);
+				}
+
+				div.percent {
+					color: #ffffff;
+				}
+			}
+		}
+
+	}
+
 }
