@@ -16,16 +16,16 @@
 <ion-content class="side-menu">
 
 	<ion-list no-lines>
-		<ion-item padding-vertical>
+		<ion-item padding-vertical (tap)="editProfile()">
 			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
 			<div class=userProfile>Lucas Cordeiro</div>
 		</ion-item>
-		<ion-item padding-vertical>
-			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+		<ion-item padding-vertical (tap)="goToMyItems()">
+			<ion-icon name="beer" item-start></ion-icon>
 			Suas Brejas
 		</ion-item>
-		<ion-item padding-vertical>
-			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
+		<ion-item padding-vertical (tap)="goToSearch()">
+			<ion-icon name="pin" item-start></ion-icon>
 			Procurar por Área
 		</ion-item>
 		<ion-item padding-vertical>
@@ -36,7 +36,7 @@
 			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
 			Trocar Agora
 		</ion-item>
-		<ion-item padding-vertical>
+		<ion-item padding-vertical (tap)="goChatMain()">
 			<ion-icon name="ios-chatbubbles-outline" item-start></ion-icon>
 			Chat
 		</ion-item>

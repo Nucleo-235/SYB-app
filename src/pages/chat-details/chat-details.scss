@@ -61,12 +61,12 @@ page-chat-details {
 
 /* Chat bubble v1.0.0 */
 
-$myMsgColor: #fffdeb;
-$myMsgColorTitle: #c9bf05;
-$otherMsgColor: #eafef8;
-$otherMsgColorTitle: #0c7052;
+$myMsgColor: color($colors, myChatColor);
+$myMsgColorTitle: color($colors, myChatColorTitle);
+$otherMsgColor: color($colors, otherChatColor);
+$otherMsgColorTitle: color($colors, otherChatColorTitle);
 $tailSize: 10px;
-$greyColor: #8E8E90;
+$greyColor: color($colors, grey);
 
 .chat-list {
 
@@ -180,7 +180,7 @@ $greyColor: #8E8E90;
 
 			.chat-body {
 				background: $myMsgColor;
-				color: #1f1f1f;
+				color: color($colors, dark);
 
 				.chat-title {
 					color: $myMsgColorTitle;
@@ -229,9 +229,9 @@ ion-textarea[fz-elastic] .text-input {
 
 	border-radius: 3px;
 
-	background: #fff;
+	background: color($colors, white);
     height: 30px;
-    color: #1f1f1f;
+    color: color($colors, dark);
 }
 
 .giphy-input {
@@ -243,12 +243,12 @@ ion-textarea[fz-elastic] .text-input {
 	}
 
 	.toolbar-background {
-		background-color: white;
+		background-color: color($colors, white);
 	}
 
 	.button-gif {
-		background-color: #488aff;
-		color: white;
+		background-color: color($colors, primary);
+		color: color($colors, white);
 		font-weight: 700;
 		font-size: 12px;
 		border-radius: 999em;

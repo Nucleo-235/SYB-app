@@ -31,8 +31,8 @@ page-item-matched {
 	text-align: center;
 
 	.bg-blur {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 	}
 
 	.avatars {
@@ -51,9 +51,9 @@ page-item-matched {
 	}
 
 	button.match {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 
@@ -69,9 +69,9 @@ page-item-matched {
 	}
 
 	button.continue {
-		background-color: #191919;
-		border: 1px solid #fff200;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		border: 1px solid color($colors, like);
+		color: color($colors, white);
 
 		border-radius: 0px;
 

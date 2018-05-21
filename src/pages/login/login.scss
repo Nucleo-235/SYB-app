@@ -1,7 +1,7 @@
 page-login {
 
 	.login {
-		background-color: #191919;
+		background-color: color($colors, dark);
 
 		.box {
 			height: 100%;
@@ -20,9 +20,9 @@ page-login {
 			}
 
 			button.enter {
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 

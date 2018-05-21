@@ -140,7 +140,7 @@ export class ItemExplorePage {
 
 	// CLICK EVENTS
 	goToMenu() {
-		this.navCtrl.push('MenuPage', {}, {
+		this.navCtrl.push('SideMenuPage', {}, {
 			direction: 'back'
 		});
 	}

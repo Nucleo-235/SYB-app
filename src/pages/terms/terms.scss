@@ -2,17 +2,17 @@ page-terms {
 
 	ion-header,
 	ion-navbar {
-		background-color: #fff200;
-		color: #191919;
+		background-color: color($colors, like);
+		color: color($colors, dark);
 
 		.toolbar-background {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 		}
 
 		.toolbar-title {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 
 			font-size: 2.2rem;
 			font-weight: 300;
@@ -30,18 +30,24 @@ page-terms {
 
 	ion-footer,
 	ion-toolbar {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 
 		.toolbar-background {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 		}
 	}
 
 	.terms {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
+
+		p {
+			font-family: 'Helvetica Neue', sans-serif !important;
+			text-align: justify;
+			line-height: 1.5;
+		}
 
 		p {
 			font-family: 'Helvetica Neue', sans-serif !important;
@@ -56,9 +62,9 @@ page-terms {
 			button.cancel {
 				flex-direction: row;
 
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 
@@ -72,9 +78,9 @@ page-terms {
 			button.agree {
 				flex-direction: row;
 
-				background-color: #191919;
-				border: 1px solid #fff200;
-				color: #ffffff;
+				background-color: color($colors, dark);
+				border: 1px solid color($colors, like);
+				color: color($colors, white);
 
 				border-radius: 0px;
 
