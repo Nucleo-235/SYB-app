@@ -38,7 +38,7 @@
 		</ion-list-header>
 
 		<ion-item class="text-muted" text-wrap>
-			<input type="text" placeholder="qual peça você vai trocar?" />
+			<input type="text" placeholder="nome da breja" />
 		</ion-item>
 	</ion-list>
 
@@ -49,38 +49,22 @@
 
 		<ion-item>
 			<ion-label>Estilo</ion-label>
-			<ion-select [(ngModel)]="estilo">
-				<ion-option value="1">Altbier</ion-option>
-				<ion-option value="2">Amber Ale</ion-option>
-				<ion-option value="3">Barley Wine</ion-option>
-				<ion-option value="4">Berliner Weisse</ion-option>
+			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="estilo">
+				<ion-option *ngFor="let item of beerStyles" [value]="item.id">{{ item.name }}</ion-option>
 			</ion-select>
 		</ion-item>
 
 		<ion-item>
 			<ion-label>Tipo</ion-label>
-			<ion-select [(ngModel)]="tipo">
-				<ion-option value="1">Ale</ion-option>
-				<ion-option value="2">Cask Ale</ion-option>
-				<ion-option value="3">Kellerbier</ion-option>
-				<ion-option value="4">Lager</ion-option>
-				<ion-option value="5">Sour Ale</ion-option>
-				<ion-option value="5">Wheat Beer</ion-option>
+			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="tipo">
+				<ion-option *ngFor="let item of beerTypes" [value]="item.id">{{ item.name }}</ion-option>
 			</ion-select>
 		</ion-item>
 
 		<ion-item>
 			<ion-label>Origem</ion-label>
-			<ion-select [(ngModel)]="origem">
-				<ion-option value="1">Grã Bretanha</ion-option>
-				<ion-option value="2">Irlanda</ion-option>
-				<ion-option value="3">América do Norte</ion-option>
-				<ion-option value="4">Bélgica</ion-option>
-				<ion-option value="5">Republica Tcheca</ion-option>
-				<ion-option value="6">França</ion-option>
-				<ion-option value="7">Alemanha</ion-option>
-				<ion-option value="8">Europa</ion-option>
-				<ion-option value="9">Outra\os</ion-option>
+			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="origem">
+				<ion-option *ngFor="let item of beerOrigins" [value]="item.id">{{ item.name }}</ion-option>
 			</ion-select>
 		</ion-item>
 	</ion-list>

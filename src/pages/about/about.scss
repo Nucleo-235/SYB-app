@@ -1,22 +1,22 @@
 page-about {
 
 	ion-header ion-icon.back-button-icon.icon {
-		color: #ffffff;
+		color: color($colors, white);
 	}
 
 	ion-header,
 	ion-navbar {
-		background-color: #191919;
-		color: #ffffff;
+		background-color: color($colors, dark);
+		color: color($colors, white);
 
 		.toolbar-background {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 		}
 
 		.toolbar-title {
-			background-color: #191919;
-			color: #ffffff;
+			background-color: color($colors, dark);
+			color: color($colors, white);
 
 			font-size: 2.2rem;
 			font-weight: 300;
@@ -24,10 +24,16 @@ page-about {
 			letter-spacing: 0.1rem;
 		}
 
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
+
 	}
 
 	.about{
-		background-color: #191919;
+		background-color: color($colors, dark);
 
 		div.logo {
 			margin-bottom: 20px;
@@ -43,13 +49,13 @@ page-about {
 
 			span.version {
 				display: block;
-				color: #ffffff;
+				color: color($colors, white);
 				text-align: center;
 			}
 		}
 
 		button.extLink {
-			color: #ffffff;
+			color: color($colors, white);
 
 			font-size: 0.9em !important;
 

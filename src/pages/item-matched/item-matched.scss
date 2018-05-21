@@ -1,9 +1,42 @@
 page-item-matched {
+
+	ion-header,
+	ion-navbar {
+		background-color: color($colors, like);
+		color: color($colors, dark);
+
+		.toolbar-background {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+		}
+
+		.toolbar-title {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+		ion-title {
+			img {
+				padding-top: 6px;
+			}
+		}
+
+	}
+
 	text-align: center;
 
 	.bg-blur {
 		background-color: #191919;
 		color: #ffffff;
+	}
+
+	.avatars {
+		background: url('../../assets/img/bgBubbles.png') no-repeat bottom center transparent;
 	}
 
 	.cheers {
@@ -12,7 +45,7 @@ page-item-matched {
 		width: 90%;
 
 		.title {
-			padding-top: 50px;
+			padding-top: 40px;
 			font-family: "SignPainter HouseScript", cursive !important;
 		}
 	}
@@ -25,6 +58,10 @@ page-item-matched {
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -39,6 +76,10 @@ page-item-matched {
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -46,9 +87,10 @@ page-item-matched {
 	}
 
 	.match-avatar {
-		margin: 16px 4px;
+		margin: 0 12px 0 0;
 		animation: fromLeft 1s ease-in;
 		&.match-right {
+			margin: 0 0 0 12px;
 			animation-name: fromRight;
 		}
 	}

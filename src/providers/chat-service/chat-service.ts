@@ -19,14 +19,35 @@ export class ChatServiceProvider {
 		});
 	}
 
+	getChatList() {
+		return new Promise(resolve => {
+			let users = [
+				{
+					name: "João",
+					lastMessage: "Oi quero trocar"
+				}, {
+					name: "Antônio",
+					lastMessage: "Quer mesmo trocar?"
+				}, {
+					name: "Daniel",
+					lastMessage: "Oi"
+				}
+			];
+
+			resolve(users);
+
+		});
+
+	}
+
 	getChatHistory() {
 		return new Promise(resolve => {
 			let messages = [
 				{
 					isMe: true,
 					type: 'text',
-					owner: 'Alexandre Cordeiro',
-					body: 'Olá',
+					owner: 'Lucas Cordeiro',
+					body: 'opa, gostei da sua cerveja.',
 					timestamp: 'Mar 10, 2018 9:47am'
 				},
 				{
@@ -34,38 +55,15 @@ export class ChatServiceProvider {
 					avatar: 'assets/img/dummy/hieu.png',
 					type: 'text',
 					owner: 'Henrique Rangel',
-					body: 'Olá tudo bom?',
+					body: 'que bom, quer trocar com alguma sua?',
 					timestamp: 'Mar 10, 2018 9:48am'
 				},
 				{
 					isMe: true,
 					type: 'text',
-					owner: 'Alexandre Cordeiro',
-					body: 'Gostei da sua breja',
+					owner: 'Lucas Cordeiro',
+					body: 'quero, tenho uma stout aqui perfeita. Mora em SP?',
 					timestamp: 'Mar 10, 2018 9:50am'
-				},
-				{
-					isMe: false,
-					avatar: 'assets/img/dummy/hieu.png',
-					type: 'text',
-					owner: 'Henrique Rangel',
-					body: 'E eu da sua Pale Ale',
-					timestamp: 'Mar 10, 2018 9:52am'
-				},
-				{
-					isMe: true,
-					type: 'text',
-					owner: 'Alexandre Cordeiro',
-					body: 'Vamos trocar?',
-					timestamp: 'Mar 10, 2018 9:53am'
-				},
-				{
-					isMe: false,
-					avatar: 'assets/img/dummy/hieu.png',
-					type: 'text',
-					owner: 'Henrique Rangel',
-					body: 'Vamos sim...',
-					timestamp: 'Mar 10, 2018 9:53am'
 				}
 			];
 

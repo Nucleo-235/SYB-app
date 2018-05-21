@@ -7,7 +7,7 @@
 		</ion-buttons>
 
 		<ion-title>
-			Share Your Beer
+			<img src="assets/img/logoBlackHeaderSYB.png" alt="Share Your Beer">
 		</ion-title>
 
 		<ion-buttons end>
@@ -39,12 +39,12 @@
 
 					<div class="card-caption" (tap)="openItemDetails()">
 						<div class="card-text pull-left">
-							<div class="font-bold text-xl">{{c.title}}</div>
+							<div class="font-bold text-lg">{{c.title}}</div>
 							<div>{{c.content}} - {{c.alcohol}}</div>
 						</div>
 
-						<div class="pull-right">
-							<ion-icon class="text-2x" name="md-information-circle"></ion-icon>
+						<div class="card-info pull-right">
+							<ion-icon class="text-2x" name="ios-information-circle-outline"></ion-icon>
 						</div>
 					</div>
 
@@ -60,7 +60,7 @@
 			</button>
 
 			<button ion-button color="white" class="button-warning" (tap)="doComplaint()">
-				<ion-icon name="md-warning"></ion-icon>
+				<ion-icon name="ios-warning-outline"></ion-icon>
 			</button>
 
 			<button ion-button color="white" class="button-like" (tap)="liked()">

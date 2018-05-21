@@ -40,11 +40,16 @@
 
 	<ion-list>
 		<ion-list-header>
-			GÊNERO
+			MAIS INFO
 		</ion-list-header>
-		<button ion-item>
-			Masculino
-		</button>
+
+		<ion-item>
+			<ion-label>Gênero</ion-label>
+			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="genero">
+				<ion-option [value]="M">Masculino</ion-option>
+				<ion-option [value]="F">Feminino</ion-option>
+			</ion-select>
+		</ion-item>
 	</ion-list>
 
 </ion-content>

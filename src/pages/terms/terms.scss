@@ -20,6 +20,12 @@ page-terms {
 			letter-spacing: 0.1rem;
 		}
 
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
+		}
+
 	}
 
 	ion-footer,
@@ -37,6 +43,12 @@ page-terms {
 		background-color: #191919;
 		color: #ffffff;
 
+		p {
+			font-family: 'Helvetica Neue', sans-serif !important;
+			text-align: justify;
+			line-height: 1.5;
+		}
+
 		.toolbar-content {
 			display: flex;
 			justify-content: space-between;
@@ -52,9 +64,9 @@ page-terms {
 
 				width: 80%;
 
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 				text-transform: uppercase;
-				letter-spacing: 0.4rem;
+				letter-spacing: 0.5rem;
 			}
 
 			button.agree {
@@ -68,9 +80,9 @@ page-terms {
 
 				width: 80%;
 
-				font-size: 1.5rem;
+				font-size: 1.6rem;
 				text-transform: uppercase;
-				letter-spacing: 0.4rem;
+				letter-spacing: 0.5rem;
 			}
 		}
 

@@ -1,27 +1,33 @@
 page-chat-main {
 
 	ion-header ion-icon.back-button-icon.icon {
-		color: #191919;
+		color: color($colors, dark);
 	}
 
 	ion-header,
 	ion-navbar {
-		background-color: #fff200;
-		color: #191919;
+		background-color: color($colors, like);
+		color: color($colors, dark);
 
 		.toolbar-background {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 		}
 
 		.toolbar-title {
-			background-color: #fff200;
-			color: #191919;
+			background-color: color($colors, like);
+			color: color($colors, dark);
 
 			font-size: 2.2rem;
 			font-weight: 300;
 			text-transform: uppercase;
 			letter-spacing: 0.1rem;
+		}
+
+		ion-title {
+			div {
+				padding-top: 6px;
+			}
 		}
 
 	}

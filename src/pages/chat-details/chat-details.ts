@@ -46,7 +46,7 @@ export class ChatDetailsPage {
 		let message = {
 			isMe: true,
 			type: 'text',
-			owner: 'Alexandre Cordeiro',
+			owner: 'Lucas Cordeiro',
 			body: this.typingMessage,
 			timestamp: 'Mar 13, 2018 9:55am'
 		};

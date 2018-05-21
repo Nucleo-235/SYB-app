@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { ChatServiceProvider } from '../../providers/chat-service/chat-service';
+
 @IonicPage()
 @Component({
 	selector: 'page-chat-main',
@@ -8,11 +10,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ChatMainPage {
 
+	// VARS
+	users: any[] = [];
+
 	// CONSTRUCTOR
 	constructor(
 		public navCtrl: NavController,
-		public navParams: NavParams
+		public navParams: NavParams,
+		private chatService: ChatServiceProvider
 	) {
+		this.init();
+	}
+
+	init() {
+		this.chatService.getChatList()
+		.then((response: any[]) => {
+			this.users = response;
+		});
 	}
 
 	// LIFECYCLE EVENTS

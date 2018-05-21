@@ -22,36 +22,14 @@
 		</div>
 
 		<div class="wrapper-xs padder-sm">
-			<ion-row align-items-center (tap)="goToChatDetails()">
+			<ion-row align-items-center *ngFor="let user of users" (tap)="goToChatDetails()">
 				<ion-col col-auto>
 					<demo-avatar [sizeClass]="'thumb-md'"></demo-avatar>
 				</ion-col>
 				<ion-col>
 					<div>
-						<div class="text-lg">João</div>
-						<div class="text-muted">Enviou uma mensagem</div>
-					</div>
-				</ion-col>
-			</ion-row>
-			<ion-row align-items-center (tap)="goToChatDetails()">
-				<ion-col col-auto>
-					<demo-avatar [sizeClass]="'thumb-md'"></demo-avatar>
-				</ion-col>
-				<ion-col>
-					<div>
-						<div class="text-lg">Antônio</div>
-						<div class="text-muted">Enviou uma mensagem</div>
-					</div>
-				</ion-col>
-			</ion-row>
-			<ion-row align-items-center (tap)="goToChatDetails()">
-				<ion-col col-auto>
-					<demo-avatar [sizeClass]="'thumb-md'"></demo-avatar>
-				</ion-col>
-				<ion-col>
-					<div>
-						<div class="text-lg">Daniel</div>
-						<div class="text-muted">Enviou uma mensagem</div>
+						<div class="text-lg">{{ user.name }}</div>
+						<div class="text-muted">{{ user.lastMessage }}</div>
 					</div>
 				</ion-col>
 			</ion-row>

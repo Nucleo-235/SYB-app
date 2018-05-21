@@ -1,5 +1,33 @@
 page-item-not-found {
 
+	ion-header,
+	ion-navbar {
+		background-color: color($colors, like);
+		color: color($colors, dark);
+
+		.toolbar-background {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+		}
+
+		.toolbar-title {
+			background-color: color($colors, like);
+			color: color($colors, dark);
+
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+		}
+
+		ion-title {
+			img {
+				padding-top: 6px;
+			}
+		}
+
+	}
+
     text-align: center;
 
 	.title {
@@ -19,6 +47,10 @@ page-item-not-found {
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
@@ -33,6 +65,10 @@ page-item-not-found {
 		border-radius: 0px;
 
 		width: 80%;
+		height: 2.1em;
+
+		margin-bottom: 20px;
+		padding-top: 5px;
 
 		font-size: 1.9rem;
 		text-transform: uppercase;
