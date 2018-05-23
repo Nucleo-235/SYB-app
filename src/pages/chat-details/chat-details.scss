@@ -30,6 +30,7 @@ page-chat-details {
 
 		ion-title {
 			div {
+				font-weight: 300;
 				padding-top: 6px;
 			}
 		}
@@ -139,11 +140,13 @@ $greyColor: color($colors, grey);
 				color: $otherMsgColorTitle;
 
 				font-family: 'Helvetica Neue', sans-serif !important;
+				font-weight: 700;
 				text-transform: uppercase;
 			}
 
 			.chat-text {
 				font-family: 'Helvetica Neue', sans-serif !important;
+				font-weight: 200;
 				font-size: 1.4rem;
 			}
 		}
@@ -186,11 +189,13 @@ $greyColor: color($colors, grey);
 					color: $myMsgColorTitle;
 
 					font-family: 'Helvetica Neue', sans-serif !important;
+					font-weight: 700;
 					text-transform: uppercase;
 				}
 
 				.chat-text {
 					font-family: 'Helvetica Neue', sans-serif !important;
+					font-weight: 200;
 					font-size: 1.4rem;
 				}
 			}
@@ -217,6 +222,7 @@ $greyColor: color($colors, grey);
 
 ion-textarea[fz-elastic] .text-input {
 	font-family: 'Helvetica Neue', sans-serif !important;
+	font-weight: 200;
 
 	margin: 8px !important;
 	padding-top: 6px !important;

@@ -22,6 +22,7 @@ page-side-menu {
 
 		ion-title {
 			img {
+				font-weight: 300;
 				padding-top: 6px;
 			}
 		}
@@ -39,6 +40,7 @@ page-side-menu {
 			}
 
             ion-item {
+				font-family: 'Myriad Pro', sans-serif !important;
                 color: color($colors, white);
                 background-color: transparent;
                 border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2) !important;
