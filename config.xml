@@ -96,7 +96,7 @@
     <plugin name="com.synconset.imagepicker" spec="^2.1.10">
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="your usage message" />
     </plugin>
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-sqlite-storage" spec="^2.3.0" />
-    <engine name="ios" spec="~4.5.4" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="6.4.0" />
 </widget>

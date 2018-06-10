@@ -34,7 +34,7 @@ export class SideMenuPage {
 	}
 
 	goToMyItems() {
-		this.navCtrl.push('MyItemsPage');
+		this.navCtrl.push('MyGroupItemsPage');
 	}
 
 	goChatMain() {

@@ -15,4 +15,8 @@ export class MyGroupItemsPage {
 		console.log('ionViewDidLoad MyGroupItemsPage');
 	}
 
+	goToMyItems() {
+		this.navCtrl.push('MyItemsPage');
+	}
+
 }

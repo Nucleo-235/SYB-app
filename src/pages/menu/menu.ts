@@ -40,7 +40,7 @@ export class MenuPage {
 	}
 
 	goToMyItems() {
-		this.navCtrl.push('MyItemsPage');
+		this.navCtrl.push('MyGroupItemsPage');
 	}
 
 	goToAbout() {
