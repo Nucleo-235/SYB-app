@@ -125,6 +125,11 @@ export class ItemExplorePage {
 		// TODO : CHANGE HOW VERIFY IF IS MATCHED
 		if (card.title == 'X Cacau IPA') {
 			let modalMatched = this.modalCtrl.create('ItemMatchedPage');
+			modalMatched.onDidDismiss(data => {
+				if (data) {
+					this.navCtrl.push('ChatDetailsPage', { 'isNewMatch': true });
+				}
+			});
 			modalMatched.present();
 		}
 

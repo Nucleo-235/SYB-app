@@ -22,11 +22,10 @@ export class ItemMatchedPage {
 
 	// CLICK EVENTS
 	goToChat() {
-		this.viewCtrl.dismiss();
-		this.navCtrl.push('ChatDetailsPage', { 'isNewMatch': true });
+		this.viewCtrl.dismiss(true);
 	}
 
 	close() {
-		this.viewCtrl.dismiss();
+		this.viewCtrl.dismiss(false);
 	}
 }

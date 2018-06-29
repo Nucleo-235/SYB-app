@@ -14,9 +14,9 @@
 
 <ion-content class="bg-custom">
 	<ion-list no-lines>
-		<ion-list-header>
+		<!-- <ion-list-header>
 			Imagens
-		</ion-list-header>
+		</ion-list-header> -->
 		<ion-item>
 			<div class="profile-images-edit">
 				<div class="profile-image" *ngFor="let image of profileImages; let i = index" (click)="openPhotoPicker(i)">
@@ -33,9 +33,9 @@
 	</ion-list>
 
 	<ion-list no-lines>
-		<ion-list-header>
+		<!-- <ion-list-header>
 			Título
-		</ion-list-header>
+		</ion-list-header> -->
 
 		<ion-item class="text-muted" text-wrap>
 			<input type="text" placeholder="nome da breja" />
@@ -43,9 +43,9 @@
 	</ion-list>
 
 	<ion-list no-lines>
-		<ion-list-header>
+		<!-- <ion-list-header>
 			Caracteristicas
-		</ion-list-header>
+		</ion-list-header> -->
 
 		<ion-item>
 			<ion-label>Estilo</ion-label>
@@ -54,7 +54,7 @@
 			</ion-select>
 		</ion-item>
 
-		<ion-item>
+		<!-- <ion-item>
 			<ion-label>Tipo</ion-label>
 			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="tipo">
 				<ion-option *ngFor="let item of beerTypes" [value]="item.id">{{ item.name }}</ion-option>
@@ -66,11 +66,11 @@
 			<ion-select okText="Ok" cancelText="Cancelar" [(ngModel)]="origem">
 				<ion-option *ngFor="let item of beerOrigins" [value]="item.id">{{ item.name }}</ion-option>
 			</ion-select>
-		</ion-item>
+		</ion-item> -->
 	</ion-list>
 
 	<ion-list no-lines>
-		<ion-list-header>
+		<!-- <ion-list-header>
 			Região
 		</ion-list-header>
 
@@ -82,11 +82,11 @@
 	<ion-list no-lines>
 		<ion-list-header>
 			Hashtags
-		</ion-list-header>
+		</ion-list-header> -->
 
-		<ion-item class="text-muted" text-wrap>
+		<!-- <ion-item class="text-muted" text-wrap>
 			<input type="text" placeholder="separe com vírgulas" />
-		</ion-item>
+		</ion-item> -->
 	</ion-list>
 
 	<ion-list no-lines>
@@ -95,7 +95,7 @@
 		</ion-list-header>
 
 		<ion-item class="text-muted" text-wrap>
-			<ion-textarea placeholder="descreva detalhes para ajudar sua bebida a ganhar um novo lar."></ion-textarea>
+			<ion-textarea placeholder="ex: ipa feita em casa 600ml #pronta #ipa #caseira"></ion-textarea>
 		</ion-item>
 		<ion-item>
 			<ion-note item-end>
