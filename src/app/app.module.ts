@@ -20,10 +20,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { ItemServiceProvider } from '../providers/item-service/item-service';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { ChatServiceProvider } from '../providers/chat-service/chat-service';
+import { SideMenuPage } from '../pages/side-menu/side-menu';
 
 @NgModule({
 	declarations: [
-		MyApp
+		MyApp,
+		SideMenuPage
 	],
 	imports: [
 		BrowserModule,

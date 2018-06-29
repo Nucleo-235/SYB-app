@@ -143,13 +143,6 @@ export class ItemExplorePage {
 		return item.id;
 	}
 
-	// CLICK EVENTS
-	goToMenu() {
-		this.navCtrl.push('SideMenuPage', {}, {
-			direction: 'back'
-		});
-	}
-
 	goToMessaging() {
 		this.navCtrl.push('ChatMainPage', {}, {
 			direction: 'forward'

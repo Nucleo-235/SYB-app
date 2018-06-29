@@ -1,18 +1,15 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, Input } from '@angular/core';
+import { Nav } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
 
-@IonicPage()
 @Component({
 	selector: 'page-side-menu',
 	templateUrl: 'side-menu.html',
 })
 export class SideMenuPage {
 
-	constructor(
-		public navCtrl: NavController,
-		public navParams: NavParams
-	) {
-	}
+	@Input("nav")nav: Nav;
+	@Input("menuCtrl")menuCtrl: MenuController;
 
 	ionViewDidLoad() {
 		console.log('ionViewDidLoad SideMenuPage');
@@ -20,25 +17,28 @@ export class SideMenuPage {
 
 	// CLICK METHODS
 	goToExplore() {
-		this.navCtrl.push('ItemExplorePage', {}, {
-			direction: 'forward'
-		});
+		this.nav.push('ItemExplorePage');
+		this.menuCtrl.close();
 	}
 
 	editProfile() {
-		this.navCtrl.push('ProfileEditPage');
+		this.nav.push('ProfileEditPage');
+		this.menuCtrl.close();
 	}
 
 	goToSearch() {
-		this.navCtrl.push('ItemSearchPage');
+		this.nav.push('ItemSearchPage');
+		this.menuCtrl.close();
 	}
 
 	goToMyItems() {
-		this.navCtrl.push('MyGroupItemsPage');
+		this.nav.push('MyGroupItemsPage');
+		this.menuCtrl.close();
 	}
 
 	goChatMain() {
-		this.navCtrl.push('ChatMainPage');
+		this.nav.push('ChatMainPage');
+		this.menuCtrl.close();
 	}
 
 }
